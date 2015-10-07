@@ -37,7 +37,7 @@ $menu = [
                     <ul>
                         <?php
                             foreach($menu as $k => $v) {
-                            $current_page = '/php/' + $k;
+                            $current_page = '/php/' . $k;
                             if ($current_page == $_SERVER['SCRIPT_NAME']) {
                             ?>
                                 <li class="active"><a href="<?= $k; ?>"><?= $v; ?></a></li>
